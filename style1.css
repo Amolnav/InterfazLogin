@@ -1,0 +1,117 @@
+/* Definición de variables de colores en la pseudoclase :root */
+:root {
+    --color-primary: #007bff; /* Azul moderno */
+    --color-primary-hover: #0056b3; /* Azul más oscuro al pasar el mouse */
+    --color-background: #f4f4f4; /* Color de fondo claro */
+    --color-text: #333; /* Color del texto */
+    --color-white: #fff; /* Color blanco */
+    --color-border: #ddd; /* Color del borde */
+    --color-shadow: rgba(0, 0, 0, 0.15); /* Sombra más sutil */
+    --color-box: #ffffff; /* Fondo de los contenedores */
+    --color-button-css: #ff91af; /* Azul moderno */
+
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 10%;
+}
+
+h2 {
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#info {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 20px;
+    max-width: 40%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--color-shadow);
+}
+
+#info h2 {
+    color: var(--color-white);
+}
+
+button {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border: 2px solid var(--color-white);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    transition: background 0.6s ease, transform 0.6s ease;
+
+
+}
+
+button:hover {
+    border-color: var(--color-button-css);
+    background-color: var(--color-button-css);
+    color: var(--color-white);
+}
+
+/* Contenedor del formulario */
+#menu {
+    background-color: var(--color-box);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px var(--color-shadow);
+    width: 320px;
+    text-align: center;
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-text);
+    text-align: left;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Estilos para el botón de envío */
+input[type="submit"] {
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+}

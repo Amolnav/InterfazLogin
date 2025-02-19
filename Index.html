@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Usuario</title>
+    <link id="estilos" rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="info">
+        <h2>Proyecto de estilo doble de CSS</h2>
+        <p>En este proyecto mostramos cómo un solo archivo HTML puede tener 2 o más CSS</p>
+        <button type="button" onclick="cambiarCSS()">Cambiar el CSS</button>
+    </div>
+    <div id="menu">
+        <h2>Iniciar Sesión</h2>
+        <img>
+        <label for="username">Nombre de Usuario</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Iniciar Sesión">
+    </div>
+
+    <script>
+        function cambiarCSS() {
+            let link = document.getElementById("estilos");
+            link.href = (link.href.includes("style1.css")) ? "style2.css" : "style1.css";
+        }
+    </script>
+</body>
+</html>

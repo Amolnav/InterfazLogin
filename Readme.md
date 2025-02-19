@@ -1,0 +1,2 @@
+Proyecto donde se realiza un unico html de un login de usuario con su contraseña, como complemento se realizaran 2 css los cuales funcionaran con el mismo html y se podran cambiar al cambiar el header.
+Idea de ampliacion: un  boton que te deje de elegir el css que se usa
