@@ -37,7 +37,7 @@ h2 {
     background-color: var(--color-primary);
     color: var(--color-white);
     padding: 20px;
-    max-width: 40%;
+    max-width: 50%;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 10px var(--color-shadow);
@@ -57,8 +57,6 @@ button {
     border-radius: 5px;
     transition: all 0.3s ease;
     transition: background 0.6s ease, transform 0.6s ease;
-
-
 }
 
 button:hover {
